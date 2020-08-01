@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Aug  1 14:34:20 2020
+# Process ID: 14656
+# Current directory: H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1
+# Command line: vivado.exe -log Shape_recognition.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Shape_recognition.tcl
+# Log file: H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1/Shape_recognition.vds
+# Journal file: H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Shape_recognition.tcl -notrace

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7s15ftgb196-1" LaunchTime="1596263601">
+  <File Type="BITSTR-BMM" Name="Shape_recognition_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Shape_recognition_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Shape_recognition_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="Shape_recognition_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Shape_recognition.tcl"/>
+  <File Type="OPT-TIMING" Name="Shape_recognition_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Shape_recognition_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="Shape_recognition_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Shape_recognition_reports.tcl"/>
+  <File Type="OPT-DRC" Name="Shape_recognition_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Shape_recognition.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Shape_recognition_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Shape_recognition_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Shape_recognition_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Shape_recognition_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Shape_recognition_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Shape_recognition_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Shape_recognition_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Shape_recognition_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Shape_recognition_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Shape_recognition_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Shape_recognition_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="Shape_recognition.bgn"/>
+  <File Type="PLACE-TIMING" Name="Shape_recognition_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Shape_recognition_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="Shape_recognition.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Shape_recognition_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Shape_recognition_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Shape_recognition_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="Shape_recognition.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="Shape_recognition_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Shape_recognition_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Shape_recognition_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Shape_recognition_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Shape_recognition_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Shape_recognition_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Shape_recognition.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="Shape_recognition_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="Shape_recognition.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Shape_recognition_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Shape_recognition_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="Shape_recognition.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Shape_recognition_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Shape_recognition_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Shape_recognition_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Shape_recognition_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Shape_recognition_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Shape_recognition_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Shape_recognition_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Shape_recognition_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Shape_recognition_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Shape_recognition_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Shape_recognition_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Shape_recognition_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Shape_recognition_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Shape_recognition_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Shape_recognition_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Shape_recognition_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Shape_recognition_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Shape_recognition_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Shape_recognition_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="Shape_recognition.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Shape_recognition_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="Shape_recognition.rbt"/>
+  <File Type="BITSTR-NKY" Name="Shape_recognition.nky"/>
+  <File Type="BG-DRC" Name="Shape_recognition.drc"/>
+  <File Type="RDI-RDI" Name="Shape_recognition.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/CLK_Division.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Documents/VIVADO/FPGA-IP/SPI-IP/SPI_Master/SPI_Master.srcs/sources_1/new/CLK_Division.v"/>
+        <Attr Name="ImportTime" Val="1589860084"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Driver_Bayer_To_RGB.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Documents/VIVADO/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/new/Driver_Bayer_To_RGB.v"/>
+        <Attr Name="ImportTime" Val="1589860084"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Driver_Csi_To_Dvp.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Documents/VIVADO/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/new/Driver_Csi_To_Dvp.v"/>
+        <Attr Name="ImportTime" Val="1589860084"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Driver_IIC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Documents/VIVADO/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/new/Driver_IIC.v"/>
+        <Attr Name="ImportTime" Val="1589860084"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Driver_MIPI1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Driver_UART.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Documents/VIVADO/FPGA/2.Community-Interface/UART/UART_Demo/UART_Demo.srcs/sources_1/new/Driver_UART.v"/>
+        <Attr Name="ImportTime" Val="1589860084"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/OV5647_Init.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Documents/VIVADO/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/new/OV5647_Init.v"/>
+        <Attr Name="ImportTime" Val="1589860084"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RGB_To_Gray.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Recognize_Top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Shape_Judge.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Shape_send.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Threshold_Judge.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Shape_recognition.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/SPI_Master.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Documents/VIVADO/FPGA-IP/SPI-IP/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v"/>
+        <Attr Name="ImportTime" Val="1589860084"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Driver_MIPI.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Documents/VIVADO/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/new/Driver_MIPI.v"/>
+        <Attr Name="ImportTime" Val="1589860084"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Driver_MIPI0.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Shape_recognition"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/system.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Documents/VIVADO/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/constrs_1/new/system.xdc"/>
+        <Attr Name="ImportTime" Val="1589860084"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="rgb2dvi_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="csi2_d_phy_rx_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="csi_to_axis_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_1"/>
+</GenRun>

@@ -1,0 +1,1290 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Aug  1 14:34:20 2020
+# Process ID: 14656
+# Current directory: H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1
+# Command line: vivado.exe -log Shape_recognition.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Shape_recognition.tcl
+# Log file: H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1/Shape_recognition.vds
+# Journal file: H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Shape_recognition.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/Desktop/Shape_recognition/Shape_recognition_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/App/Xilinx_Vivado/Vivado/2018.3/data/ip'.
+Command: synth_design -top Shape_recognition -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10516 
+WARNING: [Synth 8-2507] parameter declaration becomes local in Shape_Judge with formal parameter declaration list [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Shape_Judge.v:23]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 484.848 ; gain = 116.949
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Shape_recognition' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Shape_recognition.v:23]
+	Parameter RGB2Gray_Accuracy_N bound to: 8 - type: integer 
+	Parameter YUZHI bound to: 74 - type: integer 
+	Parameter HANG220 bound to: 219 - type: integer 
+	Parameter HANG360 bound to: 359 - type: integer 
+	Parameter HANG500 bound to: 499 - type: integer 
+	Parameter HANG550 bound to: 549 - type: integer 
+	Parameter HANG740 bound to: 739 - type: integer 
+	Parameter TURE bound to: 1 - type: integer 
+	Parameter SMALL1 bound to: 120 - type: integer 
+	Parameter SMALL2 bound to: 40 - type: integer 
+	Parameter MIDDLES bound to: 120 - type: integer 
+	Parameter MIDDLEY bound to: 240 - type: integer 
+	Parameter BIG bound to: 320 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1/.Xil/Vivado-14656-LAPTOP-IRRGUBGM/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1/.Xil/Vivado-14656-LAPTOP-IRRGUBGM/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1/.Xil/Vivado-14656-LAPTOP-IRRGUBGM/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (2#1) [H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1/.Xil/Vivado-14656-LAPTOP-IRRGUBGM/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [E:/App/Xilinx_Vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (3#1) [E:/App/Xilinx_Vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+INFO: [Synth 8-6157] synthesizing module 'Driver_MIPI1' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Driver_MIPI1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'csi2_d_phy_rx_0' [H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1/.Xil/Vivado-14656-LAPTOP-IRRGUBGM/realtime/csi2_d_phy_rx_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'csi2_d_phy_rx_0' (4#1) [H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1/.Xil/Vivado-14656-LAPTOP-IRRGUBGM/realtime/csi2_d_phy_rx_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'Data_Read' of module 'csi2_d_phy_rx_0' requires 33 connections, but only 25 given [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Driver_MIPI1.v:74]
+INFO: [Synth 8-6157] synthesizing module 'csi_to_axis_0' [H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1/.Xil/Vivado-14656-LAPTOP-IRRGUBGM/realtime/csi_to_axis_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'csi_to_axis_0' (5#1) [H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1/.Xil/Vivado-14656-LAPTOP-IRRGUBGM/realtime/csi_to_axis_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Driver_Csi_To_Dvp' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_Csi_To_Dvp.v:23]
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter HSIZE bound to: 1280 - type: integer 
+	Parameter HFP bound to: 1390 - type: integer 
+	Parameter HSP bound to: 1430 - type: integer 
+	Parameter HMAX bound to: 1650 - type: integer 
+	Parameter VSIZE bound to: 720 - type: integer 
+	Parameter VFP bound to: 725 - type: integer 
+	Parameter VSP bound to: 730 - type: integer 
+	Parameter VMAX bound to: 750 - type: integer 
+	Parameter HSPP bound to: 0 - type: integer 
+	Parameter VSPP bound to: 0 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_Csi_To_Dvp.v:106]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1/.Xil/Vivado-14656-LAPTOP-IRRGUBGM/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (6#1) [H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1/.Xil/Vivado-14656-LAPTOP-IRRGUBGM/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_Csi_To_Dvp' (7#1) [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_Csi_To_Dvp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Driver_Bayer_To_RGB' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_Bayer_To_RGB.v:23]
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter HSIZE bound to: 1280 - type: integer 
+	Parameter HFP bound to: 1390 - type: integer 
+	Parameter HSP bound to: 1430 - type: integer 
+	Parameter HMAX bound to: 1650 - type: integer 
+	Parameter VSIZE bound to: 720 - type: integer 
+	Parameter VFP bound to: 725 - type: integer 
+	Parameter VSP bound to: 730 - type: integer 
+	Parameter VMAX bound to: 750 - type: integer 
+	Parameter HSPP bound to: 0 - type: integer 
+	Parameter VSPP bound to: 0 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter IDLE_BG bound to: 1 - type: integer 
+	Parameter PATTERN0 bound to: 2 - type: integer 
+	Parameter PATTERN1 bound to: 3 - type: integer 
+	Parameter IDLE_GR bound to: 4 - type: integer 
+	Parameter PATTERN2 bound to: 5 - type: integer 
+	Parameter PATTERN3 bound to: 6 - type: integer 
+	Parameter DELAY_LINE bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1/.Xil/Vivado-14656-LAPTOP-IRRGUBGM/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (8#1) [H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1/.Xil/Vivado-14656-LAPTOP-IRRGUBGM/realtime/blk_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-6014] Unused sequential element col_cnt_reg was removed.  [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_Bayer_To_RGB.v:214]
+WARNING: [Synth 8-3936] Found unconnected internal register 'de_delay_r_reg' and it is trimmed from '8' to '7' bits. [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_Bayer_To_RGB.v:287]
+WARNING: [Synth 8-3936] Found unconnected internal register 'hsync_delay_r_reg' and it is trimmed from '8' to '7' bits. [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_Bayer_To_RGB.v:285]
+WARNING: [Synth 8-3936] Found unconnected internal register 'vsync_delay_r_reg' and it is trimmed from '8' to '7' bits. [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_Bayer_To_RGB.v:286]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_Bayer_To_RGB' (9#1) [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_Bayer_To_RGB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_MIPI1' (10#1) [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Driver_MIPI1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RGB_To_Gray' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/RGB_To_Gray.v:23]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Out_Data_reg' and it is trimmed from '33' to '8' bits. [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/RGB_To_Gray.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'RGB_To_Gray' (11#1) [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/RGB_To_Gray.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Recognize_Top' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Recognize_Top.v:1]
+	Parameter YUZHI bound to: 74 - type: integer 
+	Parameter HANG220 bound to: 219 - type: integer 
+	Parameter HANG360 bound to: 359 - type: integer 
+	Parameter HANG500 bound to: 499 - type: integer 
+	Parameter HANG550 bound to: 549 - type: integer 
+	Parameter HANG740 bound to: 739 - type: integer 
+	Parameter TURE bound to: 1 - type: integer 
+	Parameter SMALL1 bound to: 120 - type: integer 
+	Parameter SMALL2 bound to: 40 - type: integer 
+	Parameter MIDDLES bound to: 120 - type: integer 
+	Parameter MIDDLEY bound to: 240 - type: integer 
+	Parameter BIG bound to: 320 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Threshold_Judge' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Threshold_Judge.v:1]
+	Parameter YUZHI bound to: 74 - type: integer 
+	Parameter HANG220 bound to: 219 - type: integer 
+	Parameter HANG360 bound to: 359 - type: integer 
+	Parameter HANG500 bound to: 499 - type: integer 
+	Parameter HANG550 bound to: 549 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Threshold_Judge' (12#1) [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Threshold_Judge.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Shape_Judge' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Shape_Judge.v:1]
+	Parameter HANG220 bound to: 219 - type: integer 
+	Parameter HANG360 bound to: 359 - type: integer 
+	Parameter HANG500 bound to: 499 - type: integer 
+	Parameter HANG550 bound to: 549 - type: integer 
+	Parameter HANG740 bound to: 739 - type: integer 
+	Parameter TURE bound to: 1 - type: integer 
+	Parameter SMALL1 bound to: 120 - type: integer 
+	Parameter SMALL2 bound to: 40 - type: integer 
+	Parameter MIDDLES bound to: 120 - type: integer 
+	Parameter MIDDLEY bound to: 240 - type: integer 
+	Parameter BIG bound to: 320 - type: integer 
+	Parameter AAA bound to: 219 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Shape_Judge' (13#1) [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Shape_Judge.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Recognize_Top' (14#1) [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Recognize_Top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Driver_UART' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_UART.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Clk_Division' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/CLK_Division.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Clk_Division' (15#1) [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/CLK_Division.v:23]
+INFO: [Synth 8-6157] synthesizing module 'UART_Rx' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_UART.v:70]
+	Parameter RECEIVE_IDLE bound to: 2'b00 
+	Parameter RECEIVE bound to: 2'b01 
+	Parameter RECEIVE_END bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'UART_Rx' (16#1) [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_UART.v:70]
+INFO: [Synth 8-6157] synthesizing module 'UART_Tx' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_UART.v:135]
+	Parameter SEND_IDLE bound to: 0 - type: integer 
+	Parameter SEND_START bound to: 1 - type: integer 
+	Parameter SEND bound to: 2 - type: integer 
+	Parameter SEND_END bound to: 3 - type: integer 
+	Parameter SEND_WAIT bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'UART_Tx' (17#1) [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_UART.v:135]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_UART' (18#1) [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_UART.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Shape_send' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Shape_send.v:23]
+	Parameter Fang bound to: 8'b11110000 
+	Parameter San bound to: 8'b11000011 
+	Parameter Yuan bound to: 8'b11001100 
+	Parameter clk_mode bound to: 10000000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Shape_send.v:95]
+INFO: [Synth 8-155] case statement is not full and has no default [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Shape_send.v:113]
+INFO: [Synth 8-155] case statement is not full and has no default [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Shape_send.v:131]
+INFO: [Synth 8-155] case statement is not full and has no default [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Shape_send.v:149]
+WARNING: [Synth 8-5788] Register Tx_En_reg in module Shape_send is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Shape_send.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'Shape_send' (19#1) [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Shape_send.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1/.Xil/Vivado-14656-LAPTOP-IRRGUBGM/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (20#1) [H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1/.Xil/Vivado-14656-LAPTOP-IRRGUBGM/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Driver_IIC' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_IIC.v:22]
+	Parameter SCL_SUM bound to: 13'b0001111101000 
+	Parameter IDLE bound to: 5'b00000 
+	Parameter START0 bound to: 5'b00001 
+	Parameter WRSADDR0 bound to: 5'b00010 
+	Parameter ACK0 bound to: 5'b00011 
+	Parameter WRRADDR bound to: 5'b00100 
+	Parameter ACK1 bound to: 5'b00101 
+	Parameter WRDATA bound to: 5'b00110 
+	Parameter ACK2 bound to: 5'b00111 
+	Parameter STOP bound to: 5'b01000 
+	Parameter START1 bound to: 5'b01001 
+	Parameter WRSADDR1 bound to: 5'b01010 
+	Parameter ACK3 bound to: 5'b01011 
+	Parameter RDDATA bound to: 5'b01100 
+	Parameter NOACK bound to: 5'b01101 
+	Parameter WRRADDR_H bound to: 5'b01110 
+	Parameter ACK4 bound to: 5'b01111 
+INFO: [Synth 8-155] case statement is not full and has no default [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_IIC.v:333]
+WARNING: [Synth 8-5788] Register IIC_Read_Data_reg in module Driver_IIC is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_IIC.v:401]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_IIC' (21#1) [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_IIC.v:22]
+INFO: [Synth 8-6157] synthesizing module 'OV5647_Init' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/OV5647_Init.v:23]
+WARNING: [Synth 8-6014] Unused sequential element Write_Req_reg was removed.  [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/OV5647_Init.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'OV5647_Init' (22#1) [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/OV5647_Init.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Shape_recognition' (23#1) [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Shape_recognition.v:23]
+WARNING: [Synth 8-3331] design Shape_send has unconnected port Enable
+WARNING: [Synth 8-3331] design Shape_Judge has unconnected port hdata[10]
+WARNING: [Synth 8-3331] design Shape_Judge has unconnected port hdata[9]
+WARNING: [Synth 8-3331] design Shape_Judge has unconnected port hdata[8]
+WARNING: [Synth 8-3331] design Shape_Judge has unconnected port hdata[7]
+WARNING: [Synth 8-3331] design Shape_Judge has unconnected port hdata[6]
+WARNING: [Synth 8-3331] design Shape_Judge has unconnected port hdata[5]
+WARNING: [Synth 8-3331] design Shape_Judge has unconnected port hdata[4]
+WARNING: [Synth 8-3331] design Shape_Judge has unconnected port hdata[3]
+WARNING: [Synth 8-3331] design Shape_Judge has unconnected port hdata[2]
+WARNING: [Synth 8-3331] design Shape_Judge has unconnected port hdata[1]
+WARNING: [Synth 8-3331] design Shape_Judge has unconnected port hdata[0]
+WARNING: [Synth 8-3331] design Driver_Bayer_To_RGB has unconnected port hsync_in
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 530.605 ; gain = 162.707
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 530.605 ; gain = 162.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 530.605 ; gain = 162.707
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi'
+Finished Parsing XDC File [h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi'
+Parsing XDC File [h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc] for cell 'Driver_MIPI0_1/Data_Read'
+Finished Parsing XDC File [h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc] for cell 'Driver_MIPI0_1/Data_Read'
+Parsing XDC File [h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/csi_to_axis_0/csi_to_axis_0/csi_to_axis_0_in_context.xdc] for cell 'Driver_MIPI0_1/Data_To_Csi'
+Finished Parsing XDC File [h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/csi_to_axis_0/csi_to_axis_0/csi_to_axis_0_in_context.xdc] for cell 'Driver_MIPI0_1/Data_To_Csi'
+Parsing XDC File [h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_10'
+Finished Parsing XDC File [h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_10'
+Parsing XDC File [h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'clk_4'
+Finished Parsing XDC File [h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'clk_4'
+Parsing XDC File [h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'Driver_MIPI0_1/Driver_Csi_To_Dvp0/bram0'
+Finished Parsing XDC File [h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'Driver_MIPI0_1/Driver_Csi_To_Dvp0/bram0'
+Parsing XDC File [h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Driver_MIPI0_1/Driver_Bayer_To_RGB0/bram0'
+Finished Parsing XDC File [h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Driver_MIPI0_1/Driver_Bayer_To_RGB0/bram0'
+Parsing XDC File [h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Driver_MIPI0_1/Driver_Bayer_To_RGB0/bram1'
+Finished Parsing XDC File [h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Driver_MIPI0_1/Driver_Bayer_To_RGB0/bram1'
+Parsing XDC File [h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Driver_MIPI0_1/Driver_Bayer_To_RGB0/bram2'
+Finished Parsing XDC File [h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Driver_MIPI0_1/Driver_Bayer_To_RGB0/bram2'
+Parsing XDC File [H:/Desktop/Shape_recognition/Shape_recognition.srcs/constrs_1/imports/new/system.xdc]
+Finished Parsing XDC File [H:/Desktop/Shape_recognition/Shape_recognition.srcs/constrs_1/imports/new/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [H:/Desktop/Shape_recognition/Shape_recognition.srcs/constrs_1/imports/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Shape_recognition_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Shape_recognition_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 844.828 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 844.828 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 844.828 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 844.828 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '6.060' specified during out-of-context synthesis of instance 'rgb2dvi' at clock pin 'PixelClk' is different from the actual clock period '4.761', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Driver_MIPI0_1/Driver_Bayer_To_RGB0/bram0' at clock pin 'clka' is different from the actual clock period '4.761', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Driver_MIPI0_1/Driver_Bayer_To_RGB0/bram1' at clock pin 'clka' is different from the actual clock period '4.761', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Driver_MIPI0_1/Driver_Bayer_To_RGB0/bram2' at clock pin 'clka' is different from the actual clock period '4.761', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Driver_MIPI0_1/Driver_Csi_To_Dvp0/bram0' at clock pin 'clka' is different from the actual clock period '4.761', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 844.828 ; gain = 476.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 844.828 ; gain = 476.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Clk_N. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Clk_N. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Clk_P. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Clk_P. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[0]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[0]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[1]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[1]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[2]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[2]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[0]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[0]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[1]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[1]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[2]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[2]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for Clk_Rx_Data_N. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Clk_Rx_Data_N. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for Clk_Rx_Data_P. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Clk_Rx_Data_P. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for Rx_Data_N[0]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Rx_Data_N[0]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for Rx_Data_N[1]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Rx_Data_N[1]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for Rx_Data_P[0]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Rx_Data_P[0]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for Rx_Data_P[1]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Rx_Data_P[1]. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  h:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
+Applied set_property DONT_TOUCH = true for rgb2dvi. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_MIPI0_1/Data_Read. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_MIPI0_1/Data_To_Csi. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_MIPI0_1/Driver_Csi_To_Dvp0/bram0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_MIPI0_1/Driver_Bayer_To_RGB0/bram0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_MIPI0_1/Driver_Bayer_To_RGB0/bram1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_MIPI0_1/Driver_Bayer_To_RGB0/bram2. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 844.828 ; gain = 476.930
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "vdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "unpack_cnt" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3936] Found unconnected internal register 'de_delay_r_reg' and it is trimmed from '7' to '6' bits. [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_Bayer_To_RGB.v:287]
+INFO: [Synth 8-802] inferred FSM for state register 'read_state_reg' in module 'Driver_Bayer_To_RGB'
+INFO: [Synth 8-5544] ROM "color_r" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_out24" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Shape_Judge.v:170]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/new/Shape_Judge.v:152]
+INFO: [Synth 8-5546] ROM "addhang1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addhang1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addhang2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addhang3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'State_Current_reg' in module 'UART_Rx'
+INFO: [Synth 8-5544] ROM "State_Next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State_Next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'State_Current_reg' in module 'UART_Tx'
+INFO: [Synth 8-5544] ROM "State_Next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Send_Buffer" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State_Next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'Pulse_Init_Flag_reg' in module 'Shape_send'
+INFO: [Synth 8-802] inferred FSM for state register 'Fang_Cnt_reg' in module 'Shape_send'
+INFO: [Synth 8-802] inferred FSM for state register 'San_Cnt_reg' in module 'Shape_send'
+INFO: [Synth 8-802] inferred FSM for state register 'Yuan_Cnt_reg' in module 'Shape_send'
+INFO: [Synth 8-802] inferred FSM for state register 'Default_Cnt_reg' in module 'Shape_send'
+INFO: [Synth 8-5546] ROM "data_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Pulse_Init_Flag" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "led" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Pulse_Init_Flag" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Send_Buffer" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Fang_Cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Send_Buffer" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Fang_Cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "San_Cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Send_Buffer" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Fang_Cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Yuan_Cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Send_Buffer" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Fang_Cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Default_Cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'Driver_IIC'
+INFO: [Synth 8-5546] ROM "SDA_Dir" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'Ctrl_IIC_reg' into 'Enable_reg' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/OV5647_Init.v:168]
+INFO: [Synth 8-802] inferred FSM for state register 'Write_State_reg' in module 'OV5647_Init'
+INFO: [Synth 8-5546] ROM "Reg_Addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Enable" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                             0000
+                 IDLE_BG |                              001 |                             0001
+                PATTERN0 |                              010 |                             0010
+                PATTERN1 |                              011 |                             0011
+                 IDLE_GR |                              100 |                             0100
+                PATTERN2 |                              101 |                             0101
+                PATTERN3 |                              110 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'read_state_reg' using encoding 'sequential' in module 'Driver_Bayer_To_RGB'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_State_Next_reg' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_UART.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_State_Next_reg' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_UART.v:97]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            RECEIVE_IDLE |                              001 |                               00
+                 RECEIVE |                              010 |                               01
+             RECEIVE_END |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_Current_reg' using encoding 'one-hot' in module 'UART_Rx'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_State_Next_reg' [H:/Desktop/Shape_recognition/Shape_recognition.srcs/sources_1/imports/new/Driver_UART.v:97]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               SEND_IDLE |                              000 |                              000
+              SEND_START |                              010 |                              001
+                    SEND |                              100 |                              010
+                SEND_END |                              011 |                              011
+               SEND_WAIT |                              001 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_Current_reg' using encoding 'sequential' in module 'UART_Tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               10
+*
+                 iSTATE0 |                               01 |                               00
+                  iSTATE |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Pulse_Init_Flag_reg' using encoding 'sequential' in module 'Shape_send'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                             0000 |                             0000
+                 iSTATE4 |                             0001 |                             0001
+                 iSTATE1 |                             0010 |                             0010
+                  iSTATE |                             0011 |                             0011
+                 iSTATE0 |                             0100 |                             0100
+                iSTATE10 |                             0101 |                             0101
+                 iSTATE9 |                             0110 |                             0110
+                 iSTATE7 |                             0111 |                             0111
+                 iSTATE8 |                             1000 |                             1000
+                 iSTATE6 |                             1001 |                             1001
+                 iSTATE3 |                             1010 |                             1010
+                 iSTATE2 |                             1011 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Yuan_Cnt_reg' using encoding 'sequential' in module 'Shape_send'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                             0000 |                             0000
+                 iSTATE4 |                             0001 |                             0001
+                 iSTATE1 |                             0010 |                             0010
+                  iSTATE |                             0011 |                             0011
+                 iSTATE0 |                             0100 |                             0100
+                iSTATE10 |                             0101 |                             0101
+                 iSTATE9 |                             0110 |                             0110
+                 iSTATE7 |                             0111 |                             0111
+                 iSTATE8 |                             1000 |                             1000
+                 iSTATE6 |                             1001 |                             1001
+                 iSTATE3 |                             1010 |                             1010
+                 iSTATE2 |                             1011 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Fang_Cnt_reg' using encoding 'sequential' in module 'Shape_send'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE6 |                             0000 |                             0000
+                 iSTATE5 |                             0001 |                             0001
+                 iSTATE1 |                             0010 |                             0010
+                  iSTATE |                             0011 |                             0011
+                 iSTATE0 |                             0100 |                             0100
+                iSTATE11 |                             0101 |                             0101
+                iSTATE10 |                             0110 |                             0110
+                 iSTATE8 |                             0111 |                             0111
+                 iSTATE9 |                             1000 |                             1000
+                 iSTATE7 |                             1001 |                             1001
+                 iSTATE4 |                             1010 |                             1010
+                 iSTATE2 |                             1011 |                             1011
+                 iSTATE3 |                             1100 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Default_Cnt_reg' using encoding 'sequential' in module 'Shape_send'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                             0000 |                             0000
+                 iSTATE4 |                             0001 |                             0001
+                 iSTATE1 |                             0010 |                             0010
+                  iSTATE |                             0011 |                             0011
+                 iSTATE0 |                             0100 |                             0100
+                iSTATE10 |                             0101 |                             0101
+                 iSTATE9 |                             0110 |                             0110
+                 iSTATE7 |                             0111 |                             0111
+                 iSTATE8 |                             1000 |                             1000
+                 iSTATE6 |                             1001 |                             1001
+                 iSTATE3 |                             1010 |                             1010
+                 iSTATE2 |                             1011 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'San_Cnt_reg' using encoding 'sequential' in module 'Shape_send'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0000 |                            00000
+                  START0 |                             0001 |                            00001
+                WRSADDR0 |                             0010 |                            00010
+                    ACK0 |                             0011 |                            00011
+               WRRADDR_H |                             0100 |                            01110
+                    ACK4 |                             0101 |                            01111
+                 WRRADDR |                             0110 |                            00100
+                    ACK1 |                             0111 |                            00101
+                  WRDATA |                             1000 |                            00110
+                    ACK2 |                             1001 |                            00111
+                  START1 |                             1010 |                            01001
+                WRSADDR1 |                             1011 |                            01010
+                    ACK3 |                             1100 |                            01011
+                  RDDATA |                             1101 |                            01100
+                   NOACK |                             1110 |                            01101
+                    STOP |                             1111 |                            01000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'Driver_IIC'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                iSTATE59 |                          0000000 |                        000000000
+                iSTATE58 |                          0000001 |                        000000001
+                iSTATE54 |                          0000010 |                        000000010
+                iSTATE52 |                          0000011 |                        000000011
+                iSTATE43 |                          0000100 |                        000000100
+                iSTATE42 |                          0000101 |                        000000101
+                iSTATE39 |                          0000110 |                        000000110
+                iSTATE37 |                          0000111 |                        000000111
+                 iSTATE0 |                          0001000 |                        000001000
+                  iSTATE |                          0001001 |                        000001001
+                iSTATE85 |                          0001010 |                        000001010
+                iSTATE84 |                          0001011 |                        000001011
+                iSTATE77 |                          0001100 |                        000001100
+                iSTATE76 |                          0001101 |                        000001101
+                iSTATE72 |                          0001110 |                        000001110
+                iSTATE69 |                          0001111 |                        000001111
+                 iSTATE2 |                          0010000 |                        000010000
+                 iSTATE1 |                          0010001 |                        000010001
+                iSTATE87 |                          0010010 |                        000010010
+                iSTATE86 |                          0010011 |                        000010011
+                iSTATE79 |                          0010100 |                        000010100
+                iSTATE78 |                          0010101 |                        000010101
+                iSTATE75 |                          0010110 |                        000010110
+                iSTATE74 |                          0010111 |                        000010111
+                iSTATE27 |                          0011000 |                        000011000
+                iSTATE26 |                          0011001 |                        000011001
+                iSTATE25 |                          0011010 |                        000011010
+                iSTATE24 |                          0011011 |                        000011011
+                iSTATE11 |                          0011100 |                        000011100
+                iSTATE10 |                          0011101 |                        000011101
+                 iSTATE9 |                          0011110 |                        000011110
+                 iSTATE8 |                          0011111 |                        000011111
+                 iSTATE6 |                          0100000 |                        000100000
+                 iSTATE5 |                          0100001 |                        000100001
+                 iSTATE4 |                          0100010 |                        000100010
+                 iSTATE3 |                          0100011 |                        000100011
+                iSTATE83 |                          0100100 |                        000100100
+                iSTATE82 |                          0100101 |                        000100101
+                iSTATE81 |                          0100110 |                        000100110
+                iSTATE80 |                          0100111 |                        000100111
+                iSTATE38 |                          0101000 |                        000101000
+                iSTATE36 |                          0101001 |                        000101001
+                iSTATE31 |                          0101010 |                        000101010
+                iSTATE30 |                          0101011 |                        000101011
+                iSTATE21 |                          0101100 |                        000101100
+                iSTATE20 |                          0101101 |                        000101101
+                iSTATE15 |                          0101110 |                        000101110
+                iSTATE14 |                          0101111 |                        000101111
+                iSTATE41 |                          0110000 |                        000110000
+                iSTATE40 |                          0110001 |                        000110001
+                iSTATE34 |                          0110010 |                        000110010
+                iSTATE32 |                          0110011 |                        000110011
+                iSTATE23 |                          0110100 |                        000110100
+                iSTATE22 |                          0110101 |                        000110101
+                iSTATE18 |                          0110110 |                        000110110
+                iSTATE16 |                          0110111 |                        000110111
+                iSTATE73 |                          0111000 |                        000111000
+                iSTATE71 |                          0111001 |                        000111001
+                iSTATE66 |                          0111010 |                        000111010
+                iSTATE64 |                          0111011 |                        000111011
+                iSTATE57 |                          0111100 |                        000111100
+                iSTATE56 |                          0111101 |                        000111101
+                iSTATE50 |                          0111110 |                        000111110
+                iSTATE48 |                          0111111 |                        000111111
+                iSTATE35 |                          1000000 |                        001000000
+                iSTATE33 |                          1000001 |                        001000001
+                iSTATE29 |                          1000010 |                        001000010
+                iSTATE28 |                          1000011 |                        001000011
+                iSTATE19 |                          1000100 |                        001000100
+                iSTATE17 |                          1000101 |                        001000101
+                iSTATE13 |                          1000110 |                        001000110
+                iSTATE12 |                          1000111 |                        001000111
+                iSTATE67 |                          1001000 |                        001001000
+                iSTATE65 |                          1001001 |                        001001001
+                iSTATE61 |                          1001010 |                        001001010
+                iSTATE60 |                          1001011 |                        001001011
+                iSTATE51 |                          1001100 |                        001001100
+                iSTATE49 |                          1001101 |                        001001101
+                iSTATE45 |                          1001110 |                        001001110
+                iSTATE44 |                          1001111 |                        001001111
+                iSTATE70 |                          1010000 |                        001010000
+                iSTATE68 |                          1010001 |                        001010001
+                iSTATE63 |                          1010010 |                        001010010
+                iSTATE62 |                          1010011 |                        001010011
+                iSTATE55 |                          1010100 |                        001010100
+                iSTATE53 |                          1010101 |                        001010101
+                iSTATE47 |                          1010110 |                        001010110
+                iSTATE46 |                          1010111 |                        001010111
+                 iSTATE7 |                          1011000 |                        001011000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Write_State_reg' using encoding 'sequential' in module 'OV5647_Init'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 844.828 ; gain = 476.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 6     
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 5     
+	   4 Input     10 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               11 Bit    Registers := 8     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 18    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 48    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 2     
+	  89 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 5     
+	   7 Input     10 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 11    
+	   6 Input      8 Bit        Muxes := 1     
+	  12 Input      8 Bit        Muxes := 3     
+	  13 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	  89 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	  88 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 38    
+	  16 Input      4 Bit        Muxes := 6     
+	  17 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 11    
+	   5 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 50    
+	   7 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 6     
+	  12 Input      1 Bit        Muxes := 9     
+	  13 Input      1 Bit        Muxes := 5     
+	  89 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Driver_Csi_To_Dvp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Driver_Bayer_To_RGB 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   4 Input     10 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 11    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   7 Input     10 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 4     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 2     
+Module Threshold_Judge 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module Shape_Judge 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 3     
+	   3 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 5     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module Clk_Division 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module UART_Rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 2     
+Module UART_Tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+Module Driver_UART 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
+Module Shape_send 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  12 Input      8 Bit        Muxes := 3     
+	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	  16 Input      4 Bit        Muxes := 3     
+	  17 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 15    
+	   4 Input      1 Bit        Muxes := 6     
+	  12 Input      1 Bit        Muxes := 9     
+	  13 Input      1 Bit        Muxes := 3     
+Module Driver_IIC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	  13 Input      8 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 35    
+	  16 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 2     
+Module OV5647_Init 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  89 Input     16 Bit        Muxes := 1     
+	  89 Input      8 Bit        Muxes := 1     
+	  88 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	  89 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "Driver_Csi_To_Dvp0/" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Driver_Csi_To_Dvp0/vdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Driver_Csi_To_Dvp0/unpack_cnt" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x259)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x4b2)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x264)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x965)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x4c8)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x12c9)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x991)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x3a6)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x2592)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x1322)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x74c)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x4b23)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x2645)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0xe98)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x9645)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x4c8b)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x1d30)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x12c8b)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x9916)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x3a5f)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x25916)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x1322d)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x74bd)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x4b22d)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x2645a)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0xe979)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x9645a)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x4c8b4)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x1d2f2)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+INFO: [Synth 8-5546] ROM "Shape_Judge_inst/addhang3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Shape_Judge_inst/addhang2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Shape_Judge_inst/addhang1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "State_Next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "data_out" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design Shape_send has unconnected port Enable
+WARNING: [Synth 8-3331] design Recognize_Top has unconnected port hdata[10]
+WARNING: [Synth 8-3331] design Recognize_Top has unconnected port hdata[9]
+WARNING: [Synth 8-3331] design Recognize_Top has unconnected port hdata[8]
+WARNING: [Synth 8-3331] design Recognize_Top has unconnected port hdata[7]
+WARNING: [Synth 8-3331] design Recognize_Top has unconnected port hdata[6]
+WARNING: [Synth 8-3331] design Recognize_Top has unconnected port hdata[5]
+WARNING: [Synth 8-3331] design Recognize_Top has unconnected port hdata[4]
+WARNING: [Synth 8-3331] design Recognize_Top has unconnected port hdata[3]
+WARNING: [Synth 8-3331] design Recognize_Top has unconnected port hdata[2]
+WARNING: [Synth 8-3331] design Recognize_Top has unconnected port hdata[1]
+WARNING: [Synth 8-3331] design Recognize_Top has unconnected port hdata[0]
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out1_1_reg' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_1_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Driver_IIC0/iic_rd_en_r0_reg)
+INFO: [Synth 8-3886] merging instance 'Driver_IIC0/iic_rd_en_r1_reg' (FDC) to 'Driver_IIC0/iic_rd_en_r0_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Shape_send_0/\data_Clk/Is_Odd_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Recognize_0/\Threshold_Judge_inst/data8_out_reg[6] )
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data8_out_reg[5]' (FDE) to 'Recognize_0/Threshold_Judge_inst/data8_out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data8_out_reg[3]' (FDE) to 'Recognize_0/Threshold_Judge_inst/data8_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data8_out_reg[1]' (FDE) to 'Recognize_0/Threshold_Judge_inst/data8_out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Shape_send_0/data_out_reg[3]' (FDE) to 'Shape_send_0/data_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Shape_send_0/data_out_reg[5]' (FDE) to 'Shape_send_0/data_out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Shape_send_0/data_out_reg[0]' (FDE) to 'Shape_send_0/data_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Shape_send_0/data_out_reg[7]' (FDE) to 'Shape_send_0/data_out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[0]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[1]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[2]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[3]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[4]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[5]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[6]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[8]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[9]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[10]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[11]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[12]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[13]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[14]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[16]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[17]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[17]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[18]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[18]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[19]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[19]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[20]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[20]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[21]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[21]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Recognize_0/Threshold_Judge_inst/data_out24_reg[22]' (FDR) to 'Recognize_0/Threshold_Judge_inst/data_out24_reg[23]'
+INFO: [Synth 8-3886] merging instance 'Driver_IIC0/scl_cnt_reg[10]' (FDC) to 'Driver_IIC0/scl_cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Driver_IIC0/scl_cnt_reg[11]' (FDC) to 'Driver_IIC0/scl_cnt_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Driver_IIC0/scl_cnt_reg[12]' (FDC) to 'Driver_IIC0/scl_cnt_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Driver_IIC0/\scl_cnt_reg[13] )
+WARNING: [Synth 8-3332] Sequential element (UART_Rx0/FSM_onehot_State_Current_reg[2]) is unused and will be removed from module Driver_UART.
+WARNING: [Synth 8-3332] Sequential element (UART_Rx0/FSM_onehot_State_Current_reg[1]) is unused and will be removed from module Driver_UART.
+WARNING: [Synth 8-3332] Sequential element (UART_Rx0/FSM_onehot_State_Current_reg[0]) is unused and will be removed from module Driver_UART.
+WARNING: [Synth 8-3332] Sequential element (UART_Rx0/FSM_onehot_State_Next_reg[2]) is unused and will be removed from module Driver_UART.
+WARNING: [Synth 8-3332] Sequential element (UART_Rx0/FSM_onehot_State_Next_reg[1]) is unused and will be removed from module Driver_UART.
+WARNING: [Synth 8-3332] Sequential element (UART_Rx0/FSM_onehot_State_Next_reg[0]) is unused and will be removed from module Driver_UART.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 844.828 ; gain = 476.930
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3323] Resources of type DSP have been overutilized. Used = 29, Available = 20. Use report_utilization command for details.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+--------------+---------------+----------------+
+|Module Name | RTL Object   | Depth x Width | Implemented As | 
++------------+--------------+---------------+----------------+
+|OV5647_Init | Reg_Addr_reg | 128x16        | Block RAM      | 
+|OV5647_Init | Reg_Data_reg | 128x8         | Block RAM      | 
++------------+--------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|RGB_To_Gray | (A:0x259)*B        | 8      | 10     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x4b2)*B        | 8      | 11     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x264)*B   | 10     | 8      | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x965)*B        | 8      | 12     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x4c8)*B   | 11     | 8      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x12c9)*B       | 8      | 13     | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x991)*B   | 12     | 8      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x3a6)*B   | 10     | 8      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x2592)*B       | 8      | 14     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x1322)*B  | 13     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x74c)*B   | 11     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x4b23)*B       | 8      | 15     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x2645)*B  | 14     | 8      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0xe98)*B   | 12     | 8      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x9645)*B       | 8      | 16     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x4c8b)*B  | 15     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x1d30)*B  | 13     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x12c8b)*B      | 8      | 17     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x9916)*B  | 16     | 8      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x3a5f)*B  | 14     | 8      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x25916)*B      | 18     | 8      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x1322d)*B | 17     | 8      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x74bd)*B  | 15     | 8      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x4b22d)*B      | 19     | 8      | -      | -      | 27     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x2645a)*B | 18     | 8      | -      | -      | 27     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0xe979)*B  | 16     | 8      | -      | -      | 27     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x9645a)*B      | 20     | 8      | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x4c8b4)*B | 19     | 8      | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x1d2f2)*B | 17     | 8      | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance Diver_OV5647_Init/i_0/Reg_Addr_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance Diver_OV5647_Init/i_1/Reg_Data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'rgb2dvi/SerialClk' to pin 'clk_4/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'rgb2dvi/PixelClk' to 'Driver_MIPI0_1/i_2/Driver_Csi_To_Dvp0/addrb_r_reg[10]/C'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_10/clk_out1' to pin 'clk_10/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_10/clk_out2' to pin 'clk_10/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_10/clk_out3' to pin 'clk_10/bbstub_clk_out3/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_4/clk_in1' to pin 'Driver_MIPI0_1/Data_Read/bbstub_rxbyteclkhs/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_4/clk_out1' to pin 'clk_4/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'clk_4/clk_in1' to 'Driver_MIPI0_1/i_2/Driver_Csi_To_Dvp0/addrb_r_reg[10]/C'
+INFO: [Synth 8-5819] Moved 7 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 844.828 ; gain = 476.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 844.828 ; gain = 476.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance Diver_OV5647_Init/Reg_Addr_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance Diver_OV5647_Init/Reg_Data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 867.473 ; gain = 499.574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop Driver_IIC0/SDA_Dir_reg is being inverted and renamed to Driver_IIC0/SDA_Dir_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 867.473 ; gain = 499.574
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 867.473 ; gain = 499.574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 867.473 ; gain = 499.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 867.473 ; gain = 499.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 867.473 ; gain = 499.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 867.473 ; gain = 499.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------------+-------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name       | RTL Name                                              | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------------+-------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Shape_recognition | Driver_MIPI0_1/Driver_Bayer_To_RGB0/de_pos_r2_reg     | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Shape_recognition | Driver_MIPI0_1/Driver_Bayer_To_RGB0/line2_reg[0][7]   | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|Shape_recognition | Recognize_0/Shape_Judge_inst/vid_hsync_out_reg        | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Shape_recognition | Recognize_0/Shape_Judge_inst/vid_vsync_out_reg        | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Shape_recognition | Recognize_0/Shape_Judge_inst/vid_active_video_out_reg | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------------+-------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |clk_wiz_0       |         1|
+|2     |clk_wiz_1       |         1|
+|3     |rgb2dvi_0       |         1|
+|4     |csi2_d_phy_rx_0 |         1|
+|5     |csi_to_axis_0   |         1|
+|6     |blk_mem_gen_1   |         3|
+|7     |blk_mem_gen_0   |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |blk_mem_gen_0    |     1|
+|2     |blk_mem_gen_1    |     1|
+|3     |blk_mem_gen_1__3 |     1|
+|4     |blk_mem_gen_1__4 |     1|
+|5     |clk_wiz_0        |     1|
+|6     |clk_wiz_1        |     1|
+|7     |csi2_d_phy_rx_0  |     1|
+|8     |csi_to_axis_0    |     1|
+|9     |rgb2dvi_0        |     1|
+|10    |CARRY4           |    87|
+|11    |LUT1             |    16|
+|12    |LUT2             |   137|
+|13    |LUT3             |   145|
+|14    |LUT4             |   105|
+|15    |LUT5             |   131|
+|16    |LUT6             |   125|
+|17    |RAMB18E1         |     1|
+|18    |RAMB18E1_1       |     1|
+|19    |SRL16E           |    12|
+|20    |FDCE             |    25|
+|21    |FDPE             |     3|
+|22    |FDRE             |   364|
+|23    |FDSE             |     6|
+|24    |LDC              |     1|
+|25    |IBUF             |     2|
+|26    |IOBUF            |     1|
+|27    |OBUF             |     5|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+-------------------------+--------------------+------+
+|      |Instance                 |Module              |Cells |
++------+-------------------------+--------------------+------+
+|1     |top                      |                    |  1282|
+|2     |  Diver_OV5647_Init      |OV5647_Init         |    40|
+|3     |  Driver_IIC0            |Driver_IIC          |    79|
+|4     |  Driver_MIPI0_1         |Driver_MIPI1        |   650|
+|5     |    Driver_Bayer_To_RGB0 |Driver_Bayer_To_RGB |   430|
+|6     |    Driver_Csi_To_Dvp0   |Driver_Csi_To_Dvp   |   149|
+|7     |  Recognize_0            |Recognize_Top       |   172|
+|8     |    Shape_Judge_inst     |Shape_Judge         |   158|
+|9     |    Threshold_Judge_inst |Threshold_Judge     |    14|
+|10    |  Shape_send_0           |Shape_send          |   195|
+|11    |    data_Clk             |Clk_Division_0      |    57|
+|12    |  UART0                  |Driver_UART         |   125|
+|13    |    UART_Clk             |Clk_Division        |    89|
+|14    |    UART_Tx0             |UART_Tx             |    36|
++------+-------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 867.473 ; gain = 499.574
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 867.473 ; gain = 185.352
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 867.473 ; gain = 499.574
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 91 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 867.473 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  LDC => LDCE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+204 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 867.473 ; gain = 512.016
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 867.473 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'H:/Desktop/Shape_recognition/Shape_recognition.runs/synth_1/Shape_recognition.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Shape_recognition_utilization_synth.rpt -pb Shape_recognition_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 14:35:15 2020...
